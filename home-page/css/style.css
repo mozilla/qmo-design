@@ -1,0 +1,76 @@
+/***** Global *****/
+/* HTML5 tags */
+header, section, footer,aside, nav, article, figure {
+	display: block;
+}
+aside, section {
+	border-bottom: 1px solid #ccc;
+	margin: 0 0 2em;
+	padding: 0 0.5em;
+}
+
+/***** Layout *****/
+#container-left {
+	width: 60%;
+	float: left;
+	margin: 0 2%;
+}
+#container-right {
+	width: 30%;
+	float: left;
+	margin: 0 2%;
+}
+
+/***** Header *****/
+	/* Banner */
+	#banner {
+		margin: 0 auto;
+		padding: 0 2%;
+		border-bottom: 1px solid #ccc;
+	}
+ 
+/***** Body *****/
+	/* Teams */
+	.teams-list {
+		display: inline-block;
+	}
+	.teams-list li {
+		list-style: none outside none;
+		float: left;
+		text-align: center;
+		margin: 0 0.5em 2em;
+	}
+	.teams-list li img{
+		display: block;
+		margin: 0 auto 0.5em;
+		max-width: 60%;
+	}
+	/* Social */
+	#social ul {
+		display: inline-block;
+		margin: 0;
+	}
+	#social li {
+		float: left;
+		list-style: none outside none;
+		margin: 0 0.25em;
+	}
+	#social a {
+		display: block;
+		height: 32px;
+		width: 32px;
+	}
+	#social a[href*='facebook.com'] {background-image: url('../img/facebook.png');}
+	#social a[href*='twitter.com'] {background-image: url('../img/twitter.png');}
+	#social a[href*='flickr.com'] {background-image: url('../img/flickr.png');}
+	#social a[href*='meetup.com'] {background-image: url('../img/meetup.png');}
+	#social a[href*='feed'] {background-image: url('../img/rss.png');}
+
+	/* Blog */
+	#posts-list {
+		list-style: none; 
+		margin: 0;
+	}
+	#posts-list article {
+		border-bottom: 1px solid #eee;
+	}
