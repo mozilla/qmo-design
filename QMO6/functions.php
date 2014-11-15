@@ -526,7 +526,15 @@ function onemozilla_widgets_init() {
   register_sidebar( array(
     'name' => __( 'Sidebar', 'onemozilla' ),
     'id' => 'sidebar',
-    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'before_widget' => '<aside id="%1$s" class="widget widget_top %2$s">',
+    'after_widget' => "</aside>",
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+  ) );
+  register_sidebar( array(
+    'name' => __( 'Sidebar Bottom', 'onemozilla' ),
+    'id' => 'sidebar2',
+    'before_widget' => '<aside id="%1$s" class="widget widget_bottom %2$s">',
     'after_widget' => "</aside>",
     'before_title' => '<h3 class="widget-title">',
     'after_title' => '</h3>',

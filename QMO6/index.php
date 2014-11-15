@@ -6,6 +6,8 @@ if(!defined('DB_NAME')) {
 
 get_header(); ?>
 
+<?php get_sidebar(); ?>
+
   <div id="content-main" class="main" role="main">
 
   <?php if ( is_front_page() && ($paged < 1) ) :
@@ -69,5 +71,5 @@ get_header(); ?>
 
   </div><!-- #content-main -->
 
-<?php get_sidebar(); ?>
+<?php get_sidebar( 'bottom' ); ?>
 <?php get_footer(); ?>
